@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<title>Basic HTML</title>
+	
+	<script src="lib/jquery-2.1.1.min.js"></script>
+	<script src="lib/underscore.js"></script>
+	<script src="lib/randomcolor.js"></script>
+	<script src="lib/howler.min.js"></script>
+
+	<style type="text/css">
+
+	* { box-sizing: border-box; }
+
+	body { background-color: darkslateblue;
+	}
+	
+	#container { 
+		width: 960px; 
+		margin: 50px auto; 
+	}
+	
+	#one {
+		width: 660px;
+		height: 660px;
+		border-radius: 100%;
+		margin: 0 auto;
+		transition: background-color 1s;
+	}
+
+	.one {
+		background-color: rgb(40,23,53);
+	}
+
+	.one.active {
+		background-color: rgb(10,23,53);		
+	}
+
+	.one.gongplaying {
+		background-color: rgb(124,86,153) !important;
+	}
+
+	.sphere {
+		float: left;
+		width: 146px;
+		height: 146px;
+		border-radius: 0%;
+		margin: 17px;
+/*		 box-shadow: inset 0px 0px 10px 1px #6E6C6C; 
+*/	}
+
+	.sphere:hover {
+		/*box-shadow: 0px 0px 1px 0px rgb(120,120,120); */
+		/*box-shadow: 0px 0px 12px 5px rgb(35,35,35); */
+	}
+
+	.magnet {
+	/*	background-color: aquamarine !important; */	
+	}
+
+	#one:hover,
+	#two:hover,
+	#three:hover,
+	#four:hover,
+	#five:hover {
+		cursor: pointer;
+	}
+
+/*	#one {
+		background-color: rgb(40, 23, 53) !important;
+	}*/
+
+	#two {
+		background-color: yellow !important;
+	}
+
+	#three {
+		background-color: goldenrod !important;
+	}
+
+	#four {
+		background-color: gold !important;
+	}
+
+ 	#five {
+		background-color: yellow !important;
+	}
+
+	.clear {
+		clear:both;
+	}
+
+	</style>
+</head>
+<body>
+
+	<div id="container">
+		<div id="one" class="one"></div>
+	</div>
+
+	<script src="js/soundboards.js"></script>
+</body>
+</html>

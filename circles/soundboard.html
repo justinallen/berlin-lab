@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<title>Basic HTML</title>
+	
+	<script src="lib/jquery-2.1.1.min.js"></script>
+	<script src="lib/underscore.js"></script>
+	<script src="lib/randomcolor.js"></script>
+	<script src="lib/howler.min.js"></script>
+
+	<style type="text/css">
+
+	* { box-sizing: border-box; }
+
+	body { background-color: white;
+	}
+	
+	#container { 
+		width: 960px; 
+		margin: 50px auto; 
+	}
+	
+	.sphere {
+		float: left;
+		width: 146px;
+		height: 146px;
+		border-radius: 50%;
+		margin: 17px;
+		 box-shadow: inset 0px 0px 10px 1px #6E6C6C; 
+	}
+
+	.sphere:hover {
+		/*box-shadow: 0px 0px 1px 0px rgb(120,120,120); */
+		/*box-shadow: 0px 0px 12px 5px rgb(35,35,35); */
+	}
+
+	.magnet {
+	/*	background-color: aquamarine !important; */	
+	}
+
+	#one:hover,
+	#two:hover,
+	#three:hover,
+	#four:hover,
+	#five:hover {
+		cursor: pointer;
+	}
+
+	#one {
+		background-color: gold !important;
+	}
+
+	#two {
+		background-color: yellow !important;
+	}
+
+	#three {
+		background-color: goldenrod !important;
+	}
+
+	#four {
+		background-color: gold !important;
+	}
+
+ 	#five {
+		background-color: yellow !important;
+	}
+
+	.clear {
+		clear:both;
+	}
+
+	</style>
+</head>
+<body>
+
+	<div id="container">
+
+	</div>
+
+	<script src="js/soundboards.js"></script>
+</body>
+</html>
